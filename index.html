@@ -4,77 +4,107 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Za Amilu ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #fffdfd;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fefefe;
       color: #333;
       line-height: 1.6;
     }
-    section {
-      padding: 40px 20px;
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto;
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 30px 20px;
     }
-    h1 {
-      color: #d72638;
+
+    header {
+      text-align: center;
+      padding: 50px 20px 20px;
+    }
+
+    header h1 {
       font-size: 2.5em;
+      color: #d72638;
       margin-bottom: 10px;
     }
-    p {
+
+    header p {
       font-size: 1.2em;
-      margin: 20px 0;
+      color: #555;
     }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      padding: 25px;
+      margin: 30px 0;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
     .quote {
       font-style: italic;
-      color: #555;
+      color: #666;
+      margin: 15px 0;
     }
-    img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin: 20px 0;
-    }
-    iframe {
-      margin-top: 30px;
-      border-radius: 10px;
-    }
+
     footer {
-      padding: 30px;
+      text-align: center;
+      padding: 40px 20px;
       background: #f4f4f4;
       font-size: 1.1em;
-      color: #555;
+      color: #444;
+      border-top: 1px solid #ddd;
+    }
+
+    @media(max-width: 600px) {
+      header h1 { font-size: 2em; }
+      .card { padding: 20px; }
     }
   </style>
 </head>
 <body>
 
-  <section>
-    <h1>Za moju malu doktoricu ❤️</h1>
-    <p>Draga Amila,</p>
-    <p class="quote">Znam da ti nije lako. Ali ono što ti jesi – to je snaga, upornost i toplina u jednoj osobi.</p>
-  </section>
+  <div class="container">
+    <header>
+      <h1>Za moju malu doktoricu ❤️</h1>
+      <p>Znam da je teško. Znam da učiš. Ali znaj i ovo: tvoja snaga me inspiriše svaki dan.</p>
+    </header>
 
+    <div class="card">
+      <p class="quote">„Kad ti se učionica čini prevelika i tišina preglasna – sjeti se da nisi sama.”</p>
+    </div>
 
-  <section>
-    <p class="quote">Kad ti se učionica čini prevelika i tišina preglasna – sjeti se da nisi sama.</p>
-    <p class="quote">Ako te anatomija pokuša pregaziti — ti joj vrati s dozom humora i čokolade. 😊</p>
-    <p class="quote">Zapamti: ti ne učiš samo da liječiš ljude – ti već sada liječiš moj dan. 💉</p>
-    <p class="quote">A kad više ništa ne pomaže – samo reci: “Treba mi jedna produžena?!” ☕</p>
-  </section>
+    <div class="card">
+      <p class="quote">“Ako te anatomija pregazi – digni glavu, popij produženu i sjeti se da si ti jača od svih lekcija.”</p>
+      <p class="quote">“Vizualizuj mene kako ti donosim produženu svaki put kad ti fokus padne ☕”</p>
+    </div>
 
-
-  <section>
-    <img src="IMG_1792.heic" alt="Slika Emira i Amile" />
-    <p class="quote">Ovo je tvoje svjetlo nakon dana punog stresa. Vrijedi svaki trenutak.</p>
-  </section>
+    <div class="card">
+      <img src="amila.jpg" alt="Amila i Emir" />
+      <p class="quote">Tvoje lice me podsjeća zašto se sve isplati. Ti si moj lijek. I moj razlog. ❤️</p>
+    </div>
+  </div>
 
   <footer>
-    Amila, u tvojim rukama će biti nečiji život.  
-    Ali sada – u mojim rukama je tvoje srce.  
-    I to srce čuvam kao najveću čast.  
-    Volim te više nego sve skripte svijeta. ❤️
+    Amila, u tvojim rukama će jednog dana biti nečiji život.  
+    Danas si ti moj život. Čuvam tvoje srce pažljivije nego bilo koji doktor.  
+    <br><br>Volim te više nego sve skripte anatomije zajedno. ❤️
   </footer>
 
 </body>
